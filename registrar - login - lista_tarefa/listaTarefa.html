@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-pt"> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lista Tarefa</title>
+    
+    <link rel="stylesheet" href="listaTarefa.css">
+
+</head> 
+<body>
+    
+    <div class="tudo">
+        <div class="cabeça">
+            <input type="text" id="addTarefa" placeholder="Adicionar Nova Tarefa">
+            <button id="btnAddTarefa">+</button>
+        </div> 
+
+    <ul id="listaTarefas">
+<!--        <li>
+                <span class="Tarefa">Tarefa 1</span>
+                <div>
+                    
+                    <button class="btnExecutar">!</button>
+                    <button class="btnExecutar">-</i></button>
+                    <input type="checkbox" id="check" class="check">
+                </div>
+            </li>  -->
+        </ul> 
+    </div>
+ 
+    <div id="jnl_edição" class="abrir">
+        <button id="btn_sair_jnl_edição">x</button>
+        <h2 id="id_Tarefa_edição">#0000</h2>
+        <hr>
+        <form>
+            <div id="frm_editar">
+                <label for="Tarefa" id="label">Tarefa</label><br/>
+                <input type="text" id="editar_tarefa">
+            </div>
+            <div class="frm_editar">
+                <button id="btn_salvar_edição">Salvar</button>
+            </div>
+
+        </form>
+    </div>
+    <div id="jnl_edição_fundo" class="abrir"></div>
+
+    <script src="listaTarefa.js"></script>
+</body>
+</html>

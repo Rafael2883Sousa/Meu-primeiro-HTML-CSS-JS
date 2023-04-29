@@ -1,0 +1,192 @@
+body {
+    
+    margin: 0%;
+    padding: 0%;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: linear-gradient(90deg, rgb(156, 155, 155), rgb(61, 61, 61));
+}
+ 
+.tudo {
+    background-color: rgb(79, 77, 77);
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 50px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+}
+
+.cabeça {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+.cabeça input {
+    border-radius: 12px;
+    outline: none;
+    padding: 15px;
+    font-size: large;
+    color: #000;
+    border: none;
+    background-color: rgb(197, 193, 193);
+    width: 300px;
+}
+
+.cabeça button {
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    background-color: rgb(197, 193, 193);
+    width: 51px;
+    color: rgb(109, 109, 109);
+}
+
+.cabeça button:hover {
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+
+#listaTarefas {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#listaTarefas li {
+    background-color: rgb(197, 193, 193);
+    padding: 15px;
+    border-radius: 12px;
+    justify-content: space-between;
+    display: flex;
+    color: rgb(97, 97, 97);
+    align-items: center;
+    margin-top: 25px;
+}
+
+.btnExecutar {
+    border-radius: 12px;
+    padding: 5px;
+    margin: 5px; 
+    border: none;
+    width: 30px;
+    background-color: rgb(144, 144, 144);
+    font-size: large;
+    color: rgb(71, 71, 71);
+}
+
+.btnExecutar:hover {
+    background-color: rgb(111, 111, 111);
+    cursor: pointer;
+}
+
+.Tarefa{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 290px;
+    white-space: nowrap;
+}
+
+#jnl_edição{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: rgb(79, 77, 77);
+    border: 1px solid rgb(47, 46, 46);
+    width: 420px;
+    border-radius: 12px;
+    z-index: 200;
+    display: none; 
+    height: 250px;
+}
+#jnl_edição_fundo.abrir{
+    display: block !important;
+}
+#jnl_edição.abrir{
+    display: block !important;
+}
+
+
+#jnl_edição_fundo{
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.9;
+    z-index: 100;
+    right: 0;
+    display: none;
+}
+
+
+#btn_sair_jnl_edição{
+    border-radius: 30%;
+    border: none;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    right: 20px;
+    cursor: pointer;
+    font-size: large;
+    color: rgb(80, 79, 79);
+}
+
+#btn_sair_jnl_edição:hover{
+    background-color: rgb(171, 170, 170);
+}
+
+form{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.frm_editar{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    
+}
+
+#editar_tarefa{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    width: 94%;
+    height: 30px;
+    outline: none;
+    color: rgb(80, 79, 79);
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    padding-left: 15px;
+}
+
+#btn_salvar_edição{
+    border-radius: 14px;
+    width: 30%;
+    position: fixed;
+    margin-left: 30%;
+    height: 28px;
+    border: none;
+    color: rgb(80, 79, 79);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn_salvar_edição:hover{
+    background-color: rgb(171, 170, 170);
+}
+
+#label{
+    font-size: large;
+    color: #000;
+}
